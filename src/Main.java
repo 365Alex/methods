@@ -9,6 +9,20 @@ public class Main {
             System.out.println("Год " + year + " не является високосным");
         }
     }
+
+    public static void installingOsAndYear(int clientOS, int clientDeviceYear){
+        if (clientOS == 1 && clientDeviceYear <= 2015){
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }else if(clientOS ==1){
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        if (clientOS == 0 && clientDeviceYear <=2015){
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }else if(clientOS ==0){
+            System.out.println("Установите версию приложения для IOS по ссылке");
+        }
+    }
+
     public static String calculatingDeliveryDays(int deliveryDistance) {
         int timeOneZoneDelivery = 1;
         String result;
@@ -25,19 +39,6 @@ public class Main {
         }
         return result;
     }
-    public static void installingOsAndYear(int clientOS, int clientDeviceYear){
-        if (clientOS == 1 && clientDeviceYear <= 2015){
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }else if(clientOS ==1){
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
-        if (clientOS == 0 && clientDeviceYear <=2015){
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }else if(clientOS ==0){
-            System.out.println("Установите версию приложения для IOS по ссылке");
-        }
-    }
-
 
     public static void main(String[] args) {
         System.out.println("task 1");
@@ -45,6 +46,6 @@ public class Main {
         System.out.println("task2 ");
         installingOsAndYear(0, 2014);
         System.out.println("task 3");
-        System.out.println(calculatingDeliveryDays(50));
+        System.out.println(calculatingDeliveryDays(95));
     }
 }
