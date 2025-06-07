@@ -2,12 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void calculationCurrentYear(int year){
-       if (year > 1585){
-           if ((year % 400 ==0 && year % 100 !=0) || (year % 4 == 0 )){
-               System.out.println(year + " год является високосным");
-           }else {
-               System.out.println(year + " год не является високосным");
-           }
+
         }
 
     }
