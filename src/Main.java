@@ -37,6 +37,7 @@ public class Main {
         System.out.println("Потребуется дней: " + days);
     }
 
+
     public static void main(String[] args) {
         System.out.println("task 1");
         calculationCurrentYear(2021);
